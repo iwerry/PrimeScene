@@ -3,6 +3,8 @@
 > **Nome Oficial do Programa:** Prime Scene APP
 > **Repositório:** https://github.com/iwerry/PrimeScene.git
 
+
+
 > **Documento fundacional.** Qualquer IA (ou humano) que abrir este repositório deve
 > ler este arquivo ANTES de escrever uma única linha de código. Ele explica o que o
 > software é, como ele funciona hoje e para onde ele vai. Se algo aqui conflitar com
@@ -111,6 +113,25 @@ cenamestre/
 ├── src-tauri/                   ← shell Rust (janela, fs, dialogs, impressão)
 └── docs/                        ← decisões técnicas (ADRs), contrato da engine
 ```
+
+### Atualização da skill (obrigatória)
+
+A pasta `skills/skill-master-scene/` é o módulo cerebral do projeto e deve ser
+atualizada diretamente do repositório oficial da skill Master Scene:
+`https://github.com/iwerry/skill-master-scene.git`
+
+Comando oficial para atualizar o módulo:
+
+```bash
+git submodule update --remote
+```
+
+Esse comando sincroniza a pasta `skills/skill-master-scene/` com a branch remota da
+skill e garante que o "cérebro" do software esteja sempre alinhado com a última
+versão da base de conhecimento do Master Scene.
+
+Se a pasta não estiver como submodule no ambiente local, o responsável pelo setup
+precisa corrigir a configuração do submodule antes de continuar o desenvolvimento.
 
 ### Contrato de runtime (a regra de ouro do cérebro)
 

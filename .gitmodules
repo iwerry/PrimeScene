@@ -1,0 +1,3 @@
+[submodule "skills/skills/skill-master-scene"]
+	path = skills/skills/skill-master-scene
+	url = https://github.com/iwerry/skill-master-scene.git
